@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate Owner &amp; Experience"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvRateOwnerSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How was your experience borrowing from Rahul?"
+        android:textSize="14sp"
+        android:textColor="@color/gray_600"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <RatingBar
+        android:id="@+id/rbRateOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        android:rating="5"
+        android:layout_marginTop="24dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Write a short review (Optional)">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRateComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="3" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSubmitRating"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Submit Review"
+        android:textSize="16sp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/primary" />
+
+</LinearLayout>

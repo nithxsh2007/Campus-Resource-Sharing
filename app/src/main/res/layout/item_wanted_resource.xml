@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="6dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/gray_200">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvWantedTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Resource Needed Title"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvWantedCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textSize="12sp"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:textColor="@color/primary"
+                android:background="@drawable/ic_placeholder" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvWantedDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detailed description of the needed resource..."
+            android:textSize="13sp"
+            android:textColor="@color/gray_800"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvWantedLocationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Needed By: 15 Oct 2026 | Location: Hostel A"
+            android:textSize="12sp"
+            android:textColor="@color/gray_600"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/tvWantedRequester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Requested by: Rahul (+91 9876543210)"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/btnOfferItem"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I Have This Item / Offer Help"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
